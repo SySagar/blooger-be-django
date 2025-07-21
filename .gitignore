@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+static_root/
+
+# If using whitenoise or collectstatic
+/static/
+
+# Local env files
+.env
+.env.*
+
+# VS Code & PyCharm
+.vscode/
+.idea/
+*.code-workspace
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Virtualenv
+venv/
+.venv/
+ENV/
+env/
+
+# Poetry
+poetry.lock
+# (Optionally keep poetry.lock for reproducibility)
+
+# Migrations - Optional: keep if shared by team
+**/migrations/
+!**/migrations/__init__.py
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy / pyright / pylint
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+*.pyc
+
+# Build artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Mac/Linux/Windows OS files
+*.swp
+*~

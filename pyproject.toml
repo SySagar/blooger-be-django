@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "blog"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "blog"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^5.2.4"
+pydantic = "^2.11.7"
+djangorestframework = "^3.16.0"
+
+[tool.mypy]
+plugins = []
+ignore_missing_imports = true
+namespace_packages = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
