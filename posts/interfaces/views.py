@@ -43,7 +43,7 @@ class PostDetailView(APIView):
     def get(self, request, post_id):
         use_case = GetPostByIDUseCase(repo=DjangoORMPostRepository())
         try:
-            post = use_case.execute(UUID(post_id))
+            post = use_case.execute(post_id)
             return Response(post.model_dump(), status=status.HTTP_200_OK)
         except Post.DoesNotExist:
             return Response({'detail': 'Post not found'}, status=status.HTTP_404_NOT_FOUND)
